@@ -38,3 +38,7 @@ npx knex migrate:make create_incidents
 Instalação do modulo CORS:
 
 npm install cors
+
+Para instalar todas as dependencias contidas no projeto:
+
+npm install
