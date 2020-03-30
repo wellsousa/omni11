@@ -10,7 +10,7 @@ module.exports = {
     },
 
     async create(request, response){
-        const {name, email, whatsapp, city, uf} = request.body
+        const {name, email, password, whatsapp, city, uf} = request.body
 
         const id = Date.now() + crypto.randomBytes(4).toString('HEX')
     
@@ -18,6 +18,7 @@ module.exports = {
             id,
             name,
             email,
+            password,
             whatsapp,
             city,
             uf,
